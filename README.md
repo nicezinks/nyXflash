@@ -1,4 +1,4 @@
-nyXflash
+# nyXflash
 
 nyXflash is essentially a simple way to turn your PC into a network drive accessible via your local network.
 The concept is straightforward: you launch the program, and it starts a local server.
