@@ -9,9 +9,14 @@ You can upload, download, rename, delete and create ZIP files directly from the 
 1. Install [Node.js](https://nodejs.org/).
 2. Open the nyXflash folder in a terminal.
 3. Start the server with `node server.js`.
-4. The terminal will show the address to access nyXflash.
-5. Open that address in your browser.
-6. On another device, connect to the same Wi-Fi and open the server address.
-7. You can now transfer files between the devices through the browser.
+4. The terminal will show the local network address.
+5. Open the address in your browser.
+
+## Using a Cellphone
+
+Connect your cellphone to the same Wi-Fi network as the computer.
+Open the address shown by nyXflash in the cellphone browser.
+You can now upload and download files directly between the cellphone and computer.
+
 
 
