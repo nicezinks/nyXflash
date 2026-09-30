@@ -1,6 +1,6 @@
 # nyXflash
 
-nyXflash is a simple file sharing tool made with Node.js, HTML, CSS and JavaScript.
+nyXflash is a simple file sharing tool made with Node.js, HTM, and JavaScript.
 It lets you share files and folders between devices connected to the same Wi-Fi network.
 You can upload, download, rename, delete and create ZIP files directly from the web interface.
 
