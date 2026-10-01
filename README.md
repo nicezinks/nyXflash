@@ -1,22 +1,34 @@
-# nyXflash
+#nyXflash
 
-nyXflash is a simple file sharing tool made with Node.js, HTM, and JavaScript.
-It lets you share files and folders between devices connected to the same Wi-Fi network.
-You can upload, download, rename, delete and create ZIP files directly from the web interface.
+A browser-based local file manager.
 
-## How to Use
+## Access
 
-1. Install [Node.js](https://nodejs.org/).
-2. Open the nyXflash folder in a terminal.
-3. Start the server with `node server.js`.
-4. The terminal will show the local network address.
-5. Open the address in your browser.
+Without a PC:
 
-## Using a Cellphone
+`http://localhost:3000`
 
-Connect your cellphone to the same Wi-Fi network as the computer.
-Open the address shown by nyXflash in the cellphone browser.
-You can now upload and download files directly between the cellphone and computer.
+On mobile, use the address `http://PC-IP-ADDRESS:3000` while both devices are on the same local network.
 
+The server only accepts clients from the local network and is not designed to be exposed directly to the internet.
 
+## Limits
 
+- 7 files per batch
+- 4 GiB per file
+- 2 simultaneous uploads per IP
+- 8 simultaneous uploads total
+- 8 simultaneous downloads total
+- 180 requests per minute per IP
+- 60 modifications per minute per IP
+- 5,000 items per displayed list
+- 20,000 files per ZIP
+- 3.5 GiB per ZIP
+
+## Structure
+
+- `server.js` handles the server and routes
+- `storage.js` handles files and paths
+- `zip.js` assembles ZIPs without external dependencies
+- `config.js` centralizes ports and limits
+- `index.html` and the interface
