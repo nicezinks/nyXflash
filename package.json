@@ -1,0 +1,14 @@
+{
+  "name": "nyxflash",
+  "version": "6.0.3",
+  "private": true,
+  "description": "Local network file manager with a browser interface.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check config.js && node --check storage.js && node --check zip.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

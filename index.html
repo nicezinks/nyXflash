@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nyXflash</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="top">
+        <div class="brand">
+            <div class="mark">nX</div>
+            <div>
+                <div class="logo">nyXflash</div>
+                <div class="subtitle">gerenciador de arquivos local</div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <button class="btn small" id="refresh">atualizar</button>
+        <button class="btn small" id="logout">sair</button>
+    </header>
+
+    <main class="wrap">
+        <section class="hero">
+            <h1>seus arquivos, no seu computador.</h1>
+            <p>Envie e baixe arquivos pela rede local sem instalar aplicativo no celular.</p>
+        </section>
+
+        <div class="bar">
+            <label class="btn main file-picker">
+                <span>enviar arquivos</span>
+                <input id="files" class="file-input" type="file" multiple>
+            </label>
+            <label class="btn file-picker">
+                <span>enviar pasta</span>
+                <input id="folder" class="file-input" type="file" webkitdirectory multiple>
+            </label>
+            <button class="btn" id="newFolder">nova pasta</button>
+            <button class="btn" id="downloadSelected">baixar selecionados</button>
+            <button class="btn danger" id="deleteSelected">excluir selecionados</button>
+            <input class="search" id="search" placeholder="procurar">
+        </div>
+
+        <div class="info">
+            <span class="pill" id="access">localhost</span>
+            <span class="pill" id="count"></span>
+            <span class="pill" id="limitInfo">envios configuraveis</span>
+        </div>
+
+        <div class="path" id="path"></div>
+        <div class="card" id="list"></div>
+        <label class="upload" id="drop" for="files">
+            <strong>toque aqui para selecionar arquivos</strong>
+            <span>ou arraste arquivos para esta area no computador</span>
+        </label>
+        <div class="jobs" id="jobs"></div>
+        <div class="status" id="status"></div>
+
+    </main>
+
+    <div class="modal" id="loginModal" hidden aria-modal="true" role="dialog" aria-labelledby="loginTitle">
+        <div class="modal-card">
+            <h2 id="loginTitle">acesso local</h2>
+            <p>digite o PIN mostrado no computador para abrir o nyXflash.</p>
+            <input id="pin" class="pin" type="tel" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000" aria-label="PIN de acesso">
+            <div class="modal-actions">
+                <button class="btn main" id="login" type="button">entrar</button>
+            </div>
+            <div class="login-status" id="loginStatus" role="status" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
