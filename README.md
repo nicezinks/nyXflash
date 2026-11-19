@@ -22,9 +22,9 @@ The project also includes protection against path traversal attacks (e.g., `../`
 PIN-based authentication and session management control access and modifications.
 Configurable limits are in place to prevent abuse and disk space exhaustion.
 The project's main files are:
-`server.js` — server, routes, authentication, and transfers.
-`storage.js` — file and folder handling, plus path validation.
-`zip.js` — ZIP archive creation.
-`config.js` — configuration settings and limits.
+`server.js` server, routes, authentication, and transfers.
+`storage.js`  file and folder handling, plus path validation.
+`zip.js`  ZIP archive creation.
+`config.js`  configuration settings and limits.
 `index.html`, `app.js`, and `styles.css` browser interface.
-`start.bat` — quick startup script for Windows.
+`start.bat` quick startup script for Windows.
