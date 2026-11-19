@@ -2,7 +2,7 @@
 
 A browser-based local file manager built with Node.js.
 The concept is simple: turn your PC into a small file server.
-You run nyXflash and access everything via your browser—no need to install a mobile app.
+You run nyXflash and access everything via your browser, no need to install a mobile app.
 To access it from your phone, use `http://PC-IP-ADDRESS:3000`.
 Both devices must be on the same local network.
 Upon startup, the terminal displays a PIN required to access the interface.
@@ -26,5 +26,5 @@ The project's main files are:
 `storage.js` — file and folder handling, plus path validation.
 `zip.js` — ZIP archive creation.
 `config.js` — configuration settings and limits.
-`index.html`, `app.js`, and `styles.css` — browser interface.
+`index.html`, `app.js`, and `styles.css` browser interface.
 `start.bat` — quick startup script for Windows.
